@@ -11,3 +11,6 @@ I stopped here, might need to review past lesson
 https://nextjs.org/learn-pages-router/basics/dynamic-routes
 1/27/2024
 
+I stopped here
+https://nextjs.org/learn-pages-router/basics/dynamic-routes/polishing-post-page
+1/28/2024
