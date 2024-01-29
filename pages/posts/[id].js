@@ -22,20 +22,18 @@ export async function getStaticPaths() {
 }
 
 export default function Post({ postData }) {
-    return (
-      <Layout>
-
-        <Head>
-            <title>{postData.title}</title>
-        </Head>
-        {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        <Date dateString={postData.date} />
-        <br />
+  return (
+    <Layout>
+      <Head>
+        <title>{postData.title}</title>
+      </Head>
+      <article>
+        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <div className={utilStyles.lightText}>
+          <Date dateString={postData.date} />
+        </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </Layout>
-    );
-  }
-  
+      </article>
+    </Layout>
+  );
+}
